@@ -6,6 +6,7 @@ now lets create our database model and it's function to insert , delete and fetc
 to use the database we need to import some packages to our database .
 
 1. sqflite 2) path
+
    now database model is completed
    now lets remove all the the default code and start from scratch .
    import our model in main.dart
