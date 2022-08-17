@@ -1,16 +1,18 @@
-# todo_app
+let's create a todo model
+before doing that lets run code .
+lets create our todo model . its will be the blueprint of the our code.
 
-A new Flutter project.
+now lets create our database model and it's function to insert , delete and fetch
+to use the database we need to import some packages to our database .
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. sqflite 2) path
+   now database model is completed
+   now lets remove all the the default code and start from scratch .
+   import our model in main.dart
+   create a object of connectdatabase connect in our main.dart.
+   now insert function are working .
+   created todocard for UI .
+   created todolist to fetch data in todocard .
+   install Nil package for date format.
+   in todocard i added insert and delete item .
+   now app is working .
