@@ -58,13 +58,14 @@ class _TodoCardState extends State<TodoCard> {
                 children: [
                   Text(
                     widget.title,
-                    style: const TextStyle(
-                        fontSize: 18, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 18, fontWeight: (widget.ischecked == true) ? FontWeight.w300 : FontWeight.bold),
                   ),
                   Text(
                     DateFormat('dd/MM/yyyy  hh: mm aa')
                         .format(widget.creationdate),
-                    style: const TextStyle(fontSize: 16),
+                    style: TextStyle(
+                        fontSize: 16, fontWeight: (widget.ischecked == true) ? FontWeight.w300 : FontWeight.bold),
                   ),
                 ],
               ),
