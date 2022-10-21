@@ -73,7 +73,7 @@ class _TodoCardState extends State<TodoCard> {
                 onPressed: () {
                   widget.deletefunction(secondtodo);
                 },
-                icon: Icon(Icons.close),
+                icon: Icon(Icons.delete),
                 alignment: Alignment.centerLeft)
           ],
         ),
