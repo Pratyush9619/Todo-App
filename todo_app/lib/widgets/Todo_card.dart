@@ -62,8 +62,7 @@ class _TodoCardState extends State<TodoCard> {
                         fontSize: 18, fontWeight: (widget.ischecked == true) ? FontWeight.w300 : FontWeight.bold),
                   ),
                   Text(
-                    DateFormat('dd/MM/yyyy  hh: mm aa')
-                        .format(widget.creationdate),
+                    giveDate(),
                     style: TextStyle(
                         fontSize: 16, fontWeight: (widget.ischecked == true) ? FontWeight.w300 : FontWeight.bold),
                   ),
@@ -80,5 +79,29 @@ class _TodoCardState extends State<TodoCard> {
         ),
       ),
     );
+  }
+  
+  String giveDate() {
+    DateTime now = DateTime.now();
+    String dt = "";
+    dt += now.day.toString()+" ";
+    final months = {
+      1: 'Jan',
+      2: 'Feb',
+      3: 'Mar',
+      4: 'Apr',
+      5: 'May',
+      6: 'Jun',
+      7: 'Jul',
+      8: 'Aug',
+      9: 'Sep',
+      10: 'Oct',
+      11: 'Nov',
+      12: 'Dec'
+    };
+    dt += months[now.month].toString()+" ";
+    dt += now.year.toString()+"      ";
+    dt += now.hour.toString() + ":" + now.minute.toString();
+    return dt;
   }
 }
